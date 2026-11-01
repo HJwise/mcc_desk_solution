@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f6ea3"/>
+      <stop offset="0.28" stop-color="#6f93b8"/>
+      <stop offset="0.46" stop-color="#f4ad3d"/>
+      <stop offset="0.56" stop-color="#ef8a2b"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c58a3a"/>
+      <stop offset="0.35" stop-color="#b98f52"/>
+      <stop offset="0.7" stop-color="#8fa0b0"/>
+      <stop offset="1" stop-color="#b9c6d2"/>
+    </linearGradient>
+    <linearGradient id="mt1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b6b7c"/><stop offset="1" stop-color="#3a4654"/>
+    </linearGradient>
+    <linearGradient id="mt2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a6a52"/><stop offset="1" stop-color="#4f4636"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6c66a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffd98a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f6c66a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 하늘 + 노을 -->
+  <rect width="1440" height="430" fill="url(#sky)"/>
+  <!-- 구름 -->
+  <g opacity="0.55">
+    <ellipse cx="300" cy="120" rx="260" ry="34" fill="#ffffff" opacity="0.4"/>
+    <ellipse cx="820" cy="90"  rx="300" ry="30" fill="#46597a" opacity="0.5"/>
+    <ellipse cx="1180" cy="150" rx="240" ry="28" fill="#ffffff" opacity="0.4"/>
+    <ellipse cx="640" cy="170" rx="340" ry="26" fill="#ffe9c4" opacity="0.5"/>
+  </g>
+  <!-- 태양빛 번짐 -->
+  <circle cx="1040" cy="300" r="150" fill="#ffe08a" opacity="0.55"/>
+  <circle cx="1040" cy="300" r="80" fill="#fff4d0" opacity="0.7"/>
+
+  <!-- 뒤 산맥 (눈 덮인 봉우리) -->
+  <path d="M0 430 L0 300 L180 180 L300 250 L430 150 L560 240 L680 170 L820 260 L960 190 L1120 280 L1260 200 L1440 300 L1440 430 Z" fill="url(#mt1)"/>
+  <!-- 설산 하이라이트 -->
+  <path d="M430 150 L470 185 L450 190 L490 215 L410 215 L440 185 Z" fill="#e9eef3" opacity="0.85"/>
+  <path d="M680 170 L715 205 L695 210 L735 235 L650 235 L690 205 Z" fill="#e9eef3" opacity="0.8"/>
+  <path d="M960 190 L995 225 L978 230 L1015 252 L930 252 L968 225 Z" fill="#e9eef3" opacity="0.8"/>
+  <!-- 노을빛 받은 산 사면 -->
+  <path d="M430 150 L560 240 L490 215 L440 185 Z" fill="#d79a4a" opacity="0.5"/>
+  <path d="M960 190 L1120 280 L1015 252 L968 225 Z" fill="#d79a4a" opacity="0.5"/>
+
+  <!-- 앞 산맥 -->
+  <path d="M0 430 L0 360 L200 300 L420 360 L640 310 L880 370 L1120 320 L1440 380 L1440 430 Z" fill="url(#mt2)"/>
+
+  <!-- 숲(침엽수 라인) -->
+  <g fill="#2f5d4a" opacity="0.92">
+    <rect x="0" y="412" width="1440" height="18"/>
+  </g>
+  <g fill="#27503f">
+    <!-- 반복 삼각 나무 실루엣 -->
+    <path d="M20 412 l12 -26 l12 26 Z M60 412 l10 -22 l10 22 Z M100 412 l13 -28 l13 28 Z M150 412 l11 -24 l11 24 Z M200 412 l12 -26 l12 26 Z M250 412 l10 -22 l10 22 Z M300 412 l13 -28 l13 28 Z M360 412 l11 -24 l11 24 Z M420 412 l12 -26 l12 26 Z M480 412 l10 -22 l10 22 Z M540 412 l13 -27 l13 27 Z M600 412 l11 -24 l11 24 Z M660 412 l12 -26 l12 26 Z M720 412 l10 -22 l10 22 Z M780 412 l13 -28 l13 28 Z M840 412 l11 -24 l11 24 Z M900 412 l12 -26 l12 26 Z M960 412 l10 -22 l10 22 Z M1020 412 l13 -27 l13 27 Z M1080 412 l11 -24 l11 24 Z M1140 412 l12 -26 l12 26 Z M1200 412 l10 -22 l10 22 Z M1260 412 l13 -28 l13 28 Z M1320 412 l11 -24 l11 24 Z M1380 412 l12 -26 l12 26 Z"/>
+  </g>
+
+  <!-- 호수 (물결 반영) -->
+  <rect y="430" width="1440" height="330" fill="url(#water)"/>
+  <!-- 지평선 빛 -->
+  <rect y="428" width="1440" height="3" fill="url(#glow)"/>
+  <!-- 물 위 노을 반영 (세로 번짐) -->
+  <g opacity="0.5">
+    <rect x="980" y="430" width="120" height="330" fill="#ffd98a" opacity="0.4"/>
+    <rect x="1010" y="430" width="50" height="330" fill="#fff0c8" opacity="0.5"/>
+  </g>
+  <!-- 물결 가로선 -->
+  <g stroke="#ffffff" stroke-opacity="0.18" stroke-width="2">
+    <line x1="0" y1="470" x2="1440" y2="470"/>
+    <line x1="0" y1="510" x2="1440" y2="510"/>
+    <line x1="0" y1="556" x2="1440" y2="556"/>
+    <line x1="0" y1="610" x2="1440" y2="610"/>
+    <line x1="0" y1="672" x2="1440" y2="672"/>
+  </g>
+  <!-- 산 반영(흐릿) -->
+  <path d="M0 430 L200 490 L420 430 L640 480 L880 430 L1120 475 L1440 430 L1440 520 L0 520 Z" fill="#4f4636" opacity="0.22"/>
+</svg>

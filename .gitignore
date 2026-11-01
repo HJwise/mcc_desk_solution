@@ -1,0 +1,20 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+Gemfile.lock
+vendor/
+.bundle/
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# 검토용 시안 — 공개 금지 (내부 비공개 저장소 mcc_desk_io에서 관리)
+mockups/
